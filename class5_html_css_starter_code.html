@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A Simple Game</title>
+  </head>
+
+  <body>
+    <input type="text" id="guess" />
+    <button onclick="GuessingGame()">Guess!</button>
+
+    <script type="text/javascript">
+
+      let myGuess = 3
+      
+      function GuessingGame(){
+
+        //gets the value from the input with id#guess
+        let num = document.querySelector("#guess").value;
+
+        
+        //Copy your guessing game code here!
+        myGuess = Number(num);
+        if(myGuess === 5){
+          alert("You win!")
+        } else {
+          alert("You lose!");
+        }
+
+      }
+    </script>
+  </body>
+</html>
